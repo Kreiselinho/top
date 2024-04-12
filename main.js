@@ -283,7 +283,7 @@ let jsonData = {
     ]
 };
 
-L.geoJSON(jsondata, {}).bindPopup(function (layer) {
+L.geoJSON(jsonData, {}).bindPopup(function (layer) {
     let prop = layer.feature.properties
     return `
     <b>${prop.name}</b>
